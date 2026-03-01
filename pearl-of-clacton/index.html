@@ -3,44 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearl of Clacton</title>
-    <style>
-        body {
-            background-color: #FFFAF0; /* Light color for the background */
-            color: #333;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #007BFF; /* Brand Primary Color */
-        }
-        .menu {
-            margin: 20px 0;
-        }
-        .giveaway {
-            background-color: #FFFFE0; /* Giveway section background */
-            border: 2px dashed #FF4500; /* Giveaway border */
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Proud House Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the Pearl of Clacton!</h1>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Proud House Restaurant</h1>
+        <p>Your culinary journey begins here.</p>
+        <a href="#booking" class="btn">Book a Table</a>
+    </header>
 
-    <div class="menu">
-        <h2>Monday Senior Special Menu</h2>
+    <!-- Navigation -->
+    <nav>
         <ul>
-            <li>Fish and Chips - $10.99</li>
-            <li>Beef Stroganoff - $12.49</li>
-            <li>Vegetarian Curry - $9.99</li>
-            <li>Chicken Salad - $11.49</li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#sunday-roast">Sunday Roast</a></li>
+            <li><a href="#giveaway">Giveaway</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="giveaway">
-        <h2>Enter Our Giveaway!</h2>
-        <p>To enter, simply fill out the form at our restaurant or visit our website and submit your details.</p>
-        <p>Don’t miss your chance to win a $100 dining voucher!</p>
-    </div>
+    <!-- Menu Specialties Section -->
+    <section id="menu">
+        <h2>Our Specialties</h2>
+        <p>Discover our featured dishes that are sure to delight your palate.</p>
+        <ul>
+            <li>Special Dish 1</li>
+            <li>Special Dish 2</li>
+            <li>Special Dish 3</li>
+        </ul>
+    </section>
+
+    <!-- Food Gallery Section -->
+    <section id="gallery">
+        <h2>Food Gallery</h2>
+        <div class="gallery-images">
+            <img src="image1.jpg" alt="Dish 1">
+            <img src="image2.jpg" alt="Dish 2">
+            <img src="image3.jpg" alt="Dish 3">
+        </div>
+    </section>
+
+    <!-- Sunday Roast Section -->
+    <section id="sunday-roast">
+        <h2>Sunday Roast</h2>
+        <p>Join us for a traditional Sunday Roast with all the fixings.</p>
+    </section>
+
+    <!-- Giveaway Campaign Section -->
+    <section id="giveaway">
+        <h2>Giveaway Campaign</h2>
+        <p>Participate in our giveaway for a chance to win exciting prizes!</p>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking">
+        <h2>Book a Table</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Find us on Google Maps:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d144.9537363153182!3d-37.81720997975185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0dd5f3%3A0x5045675218cedb0!2sProud%20House%20Restaurant!5e0!3m2!1sen!2sau!4v1611180446380!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Proud House Restaurant. All rights reserved.</p>
+    </footer>
 </body>
 </html>
