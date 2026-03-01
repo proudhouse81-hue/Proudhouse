@@ -1,324 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proud House | Modern Café</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<!-- SEO Google Rating -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CafeOrCoffeeShop",
-  "name": "Proud House",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "127"
-  }
-}
-</script>
-
-<style>
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f9f9f9;
-  color: #1a1a1a;
-  scroll-behavior: smooth;
-}
-h1, h2 { font-family: 'Playfair Display', serif; }
-
-/* NAVIGATION */
-nav {
-  background: #000;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
-nav ul li a {
-  display: block;
-  padding: 18px 25px;
-  color: white;
-  text-decoration: none;
-}
-nav ul li a:hover { background: #c6a75e; color: black; }
-
-/* HERO */
-.hero-modern {
-  background: url('images/breakfast1.jpg') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-overlay {
-  background: rgba(255,255,255,0.9);
-  padding: 50px;
-  border-radius: 20px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-}
-.hero-overlay img { max-width: 120px; }
-.hero-overlay h1 { font-size: 48px; margin: 15px 0; }
-.hero-overlay p { font-size: 18px; margin-bottom: 25px; color: #555; }
-.hero-btn {
-  display: inline-block;
-  padding: 14px 35px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 40px;
-  transition: 0.3s;
-}
-.hero-btn:hover { background: #c6a75e; color: black; }
-
-section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* CARDS */
-.menu-grid, .specials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-}
-.menu-item, .special-item {
-  background: white;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-  text-align: center;
-  transition: 0.3s;
-}
-.menu-item:hover, .special-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.1);
-}
-.menu-item img, .special-item img { width: 100%; border-radius: 15px; }
-
-/* TABS */
-.tabs { text-align:center; margin-bottom:40px; }
-.tablinks {
-  background:#000;
-  color:white;
-  padding:12px 25px;
-  border:none;
-  margin:5px;
-  border-radius:30px;
-  cursor:pointer;
-}
-.tablinks.active, .tablinks:hover { background:#c6a75e; color:black; }
-.tabcontent { display:none; }
-
-/* GALLERY */
-.gallery-carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 20px;
-  padding-bottom: 20px;
-}
-.gallery-carousel::-webkit-scrollbar { display: none; }
-.gallery-item {
-  min-width: 250px;
-  border-radius: 20px;
-  overflow: hidden;
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
-}
-.gallery-item img { width: 100%; display: block; }
-.gallery-item:hover { transform: scale(1.05); }
-
-/* FORM */
-form {
-  display:flex;
-  flex-direction:column;
-  max-width:450px;
-  margin:auto;
-}
-form input, form textarea, form select {
-  padding:14px;
-  margin:10px 0;
-  border:1px solid #ddd;
-  border-radius:8px;
-}
-form button {
-  padding:14px;
-  background:#000;
-  color:white;
-  border:none;
-  border-radius:40px;
-  cursor:pointer;
-}
-form button:hover { background:#c6a75e; color:black; }
-
-/* FOOTER */
-footer {
-  background:#000;
-  color:white;
-  text-align:center;
-  padding:40px;
-}
-
-/* TODAY'S SPECIAL BADGE */
-.today-badge {
-  display: inline-block;
-  background: #c6a75e;
-  color: #1f1f1f;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl of Clacton</title>
+    <style>
+        body {
+            background-color: #FFFAF0; /* Light color for the background */
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #007BFF; /* Brand Primary Color */
+        }
+        .menu {
+            margin: 20px 0;
+        }
+        .giveaway {
+            background-color: #FFFFE0; /* Giveway section background */
+            border: 2px dashed #FF4500; /* Giveaway border */
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Welcome to the Pearl of Clacton!</h1>
 
-<!-- NAVIGATION -->
-<nav>
-<ul>
-<li><a href="#menu">Menu</a></li>
-<li><a href="#specials">Specials</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#booking">Booking</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <div class="menu">
+        <h2>Monday Senior Special Menu</h2>
+        <ul>
+            <li>Fish and Chips - $10.99</li>
+            <li>Beef Stroganoff - $12.49</li>
+            <li>Vegetarian Curry - $9.99</li>
+            <li>Chicken Salad - $11.49</li>
+        </ul>
+    </div>
 
-<!-- HERO -->
-<div class="hero-modern">
-<div class="hero-overlay">
-<img src="images/logo.png" alt="Proud House Logo">
-<h1>Proud House</h1>
-<p>Modern Café • Fresh Flavours • Clacton-on-Sea</p>
-<a href="#menu" class="hero-btn">View Our Menu</a>
-</div>
-</div>
-
-<!-- MENU -->
-<section id="menu">
-<h2>Our Menu</h2>
-<div class="tabs">
-<button class="tablinks active" onclick="openTab(event,'Mains')">Mains</button>
-<button class="tablinks" onclick="openTab(event,'Desserts')">Desserts</button>
-<button class="tablinks" onclick="openTab(event,'Drinks')">Drinks</button>
-<button class="tablinks" onclick="openTab(event,'Specials')">Specials</button>
-</div>
-
-<!-- Mains Tab -->
-<div id="Mains" class="tabcontent" style="display:block;">
-<div class="menu-grid">
-<div class="menu-item"><img src="images/breakfast1.jpg"><h4>Full English</h4><p>£8.50</p></div>
-<div class="menu-item"><img src="images/breakfast2.jpg"><h4>Veg Breakfast</h4><p>£7.50</p></div>
-</div>
-</div>
-
-<!-- Desserts Tab -->
-<div id="Desserts" class="tabcontent">
-<div class="menu-grid">
-<div class="menu-item"><img src="images/dessert1.jpg"><h4>Chocolate Cake</h4><p>£4.50</p></div>
-<div class="menu-item"><img src="images/dessert2.jpg"><h4>Fruit Tart</h4><p>£4.00</p></div>
-</div>
-</div>
-
-<!-- Drinks Tab -->
-<div id="Drinks" class="tabcontent">
-<div class="menu-grid">
-<div class="menu-item"><h4>Coffee</h4><p>£2.50</p></div>
-<div class="menu-item"><h4>Tea</h4><p>£2.00</p></div>
-</div>
-</div>
-
-<!-- Specials Tab -->
-<div id="Specials" class="tabcontent">
-<div class="specials-grid">
-<div class="special-item" data-day="0"><img src="images/special1_2.jpg"><h4>Seafood Platter</h4><p>£12.50</p></div>
-<div class="special-item" data-day="1"><img src="images/special3_2.jpg"><h4>Vegetarian Delight</h4><p>£9.50</p></div>
-<div class="special-item" data-day="2"><img src="images/special3_3.jpg"><h4>Chef's Curry Special</h4><p>£10.50</p></div>
-</div>
-</div>
-
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-<h2>Our Gallery</h2>
-<div class="gallery-carousel">
-<div class="gallery-item"><img src="images/breakfast1.jpg"></div>
-<div class="gallery-item"><img src="images/breakfast2.jpg"></div>
-<div class="gallery-item"><img src="images/dessert1.jpg"></div>
-<div class="gallery-item"><img src="images/dessert2.jpg"></div>
-<div class="gallery-item"><img src="images/special1_2.jpg"></div>
-<div class="gallery-item"><img src="images/special3_2.jpg"></div>
-<div class="gallery-item"><img src="images/special3_3.jpg"></div>
-<div class="gallery-item"><img src="images/giveaway.jpg"></div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-<h2>Find Us</h2>
-<p style="text-align:center;">Open 9am – 4pm | Monday – Sunday</p>
-<p style="text-align:center;">Address: 11 Pallister Road, Clacton-on-Sea, CO15 1PQ</p>
-
-<div style="margin-top:30px; border-radius:15px; overflow:hidden;">
-<iframe src="https://www.google.com/maps?q=11+Pallister+Road+Clacton-on-Sea+CO15+1PQ&output=embed" width="100%" height="350" style="border:0;" loading="lazy"></iframe>
-</div>
-
-<div style="text-align:center; margin-top:30px;">
-<a href="https://www.facebook.com/" target="_blank" style="padding:14px 30px; background:#1877F2; color:white; border-radius:40px; text-decoration:none;">Follow us on Facebook</a>
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-© 2026 Proud House
-</footer>
-
-<!-- SCRIPTS -->
-<script>
-// Tabs
-function openTab(evt, tabName) {
-var i, tabcontent, tablinks;
-tabcontent = document.getElementsByClassName("tabcontent");
-for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
-tablinks = document.getElementsByClassName("tablinks");
-for (i = 0; i < tablinks.length; i++) { tablinks[i].classList.remove("active"); }
-document.getElementById(tabName).style.display = "block";
-ev.currentTarget.classList.add("active");
-}
-
-// Today's Special
-const specials = document.querySelectorAll("#Specials .special-item");
-const today = new Date().getDay();
-specials.forEach(item => {
-  if (parseInt(item.getAttribute("data-day")) === today) {
-    const badge = document.createElement("span");
-    badge.className = "today-badge";
-    badge.innerText = "🌟 Today's Special";
-    item.prepend(badge);
-  }
-});
-
-// Auto-slide Gallery
-const gallery = document.querySelector(".gallery-carousel");
-let scrollAmount = 0;
-function autoSlideGallery() {
-  scrollAmount += 1;
-  if(scrollAmount > gallery.scrollWidth - gallery.clientWidth){ scrollAmount = 0; }
-gallery.scrollTo({ left: scrollAmount, behavior: "smooth" });
-}
-setInterval(autoSlideGallery, 30);
-</script>
-
+    <div class="giveaway">
+        <h2>Enter Our Giveaway!</h2>
+        <p>To enter, simply fill out the form at our restaurant or visit our website and submit your details.</p>
+        <p>Don’t miss your chance to win a $100 dining voucher!</p>
+    </div>
 </body>
 </html>
